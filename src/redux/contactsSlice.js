@@ -3,7 +3,9 @@ import {
   fetchContacts,
   addContacts,
   deleteContacts,
-} from "../redux/operations";
+  editContact,
+} from "../redux/operations.js";
+import { logOut } from "./auth/operations";
 
 const handlePending = (state) => {
   state.isLoading = true;
@@ -41,7 +43,25 @@ const contactsSlice = createSlice({
         );
         state.items.splice(index, 1);
       })
-      .addCase(deleteContacts.rejected, handleRejected);
+      .addCase(deleteContacts.rejected, handleRejected)
+      .addCase(editContact.pending, handlePending)
+      .addCase(editContact.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.error = null;
+
+        const index = state.contacts.findIndex(
+          (contact) => contact.id === action.payload.id
+        );
+        if (index !== -1) {
+          state.contacts[index] = action.payload;
+        }
+      })
+      .addCase(editContact.rejected, handleRejected)
+      .addCase(logOut.fulfilled, (state) => {
+        state.items = [];
+        state.error = null;
+        state.isLoading = false;
+      });
   },
 });
 

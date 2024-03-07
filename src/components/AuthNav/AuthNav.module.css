@@ -1,0 +1,18 @@
+.wrapper {
+  display: inline-flex;
+  align-items:flex-end;
+  gap: 22px;
+  
+}
+
+.link {
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: #0d097ecb;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.587) 0px 3px 3px;
+  
+}

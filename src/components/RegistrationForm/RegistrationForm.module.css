@@ -1,0 +1,188 @@
+.title {
+  font-weight: bolder;
+  margin-bottom: 45px;
+  font-size: 3em;
+  background-color: #000000cb;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(250, 247, 247, 0.429) 0px 3px 3px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 35px 35px;
+  background-color: #ffffff1b;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  margin-top: 300px;
+}
+.formGroupName {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.formGroupEmail {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.formGroupPassword {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 1.3em;
+  background-color: #000000cb;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(250, 247, 247, 0.429) 0px 3px 3px;
+  font-weight: bolder;
+}
+.input {
+  border: 0;
+  outline: 0;
+  border-radius: 320px;
+  padding: 16px;
+  margin-bottom: 5px;
+  background-color: #ffffff01;
+  backdrop-filter: blur(8px);
+  box-shadow: inset 2px 2px 5px #8d8363, inset -5px -5px 10px #fff;
+  max-width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+.error {
+  margin-left: 5px;
+  color: #ae1100;
+  font-size: 12px;
+}
+.btn {
+  border: 0;
+  outline: 0;
+  color: #ae1100;
+  font-size: 1em;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 320px;
+  padding: 12px 25px;
+  background-color: #eba147f7;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+}
+.btn:hover {
+  color: #178a0c;
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+.btn:active {
+  box-shadow: rgba(59, 55, 55, 0.521) 1px 1px 4px 0px inset,
+    rgba(3, 3, 3, 0.313) -2px -2px 4px 0px inset;
+}
+
+.error {
+  color: red;
+}
+
+/**
+  |============================
+  | Animation Information
+  |============================
+*/
+.formGroupPassword {
+  display: flex;
+  flex-direction: column;
+}
+.itemHints {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+}
+.itemHints .hint {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemHints .hintContent {
+  width: 350px;
+  position: absolute;
+  z-index: 5;
+  padding: 35px 0;
+  opacity: 0;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+  color: #fff;
+  visibility: hidden;
+  pointer-events: none;
+}
+.itemHints .hint:hover .hintContent {
+  position: absolute;
+  z-index: 5;
+  padding: 35px 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.7s ease, visibility 0.7s ease;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+  color: #fff;
+  visibility: visible;
+  pointer-events: none;
+}
+.itemHints .hintContent::before {
+  width: 0px;
+  bottom: 32px;
+  left: 1px;
+  content: "";
+  background-color: green;
+  height: 2px;
+  position: absolute;
+  transition: width 0.4s;
+}
+.itemHints .hint:hover .hintContent::before {
+  background-color: green;
+  width: 328px;
+  transition: width 0.4s;
+}
+
+.itemHints .hint:hover .hintContent::after {
+  opacity: 1;
+  visibility: visible;
+}
+.itemHints .hint[data-position="4"] .hintContent {
+  bottom: -32px;
+  left: 25px;
+  margin-left: 16px;
+}
+.infoText {
+  font-size: 12px;
+  letter-spacing: normal;
+  line-height: 98%;
+  color: black;
+}
+
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
