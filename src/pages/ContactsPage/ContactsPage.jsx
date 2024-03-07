@@ -1,6 +1,6 @@
 import css from "./ContactsPage.module.css";
 import { FcContacts } from "react-icons/fc";
-import { ContactList } from "../ContactList/ContactList";
+import { ContactList } from "../../components/ContactList/ContactList";
 import { SearchBox } from "../SearchBox/SearchBox";
 import { ContactForm } from "../ContactForm/ContactForm";
 import { useDispatch, useSelector } from "react-redux";

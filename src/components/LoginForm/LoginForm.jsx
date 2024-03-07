@@ -21,16 +21,8 @@ export const LoginForm = () => {
   const passwordFieldId = nanoid();
   const dispatch = useDispatch();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-
-    dispatch(
-      logIn({
-        email: form.elements.email.value,
-        password: form.elements.password.value,
-      })
-    )
+  const handleSubmit = (value, actions) => {
+    dispatch(logIn({ value }))
       .unwrap()
       .then(() => {
         toast.success(<p>Success!!!</p>);
@@ -39,7 +31,7 @@ export const LoginForm = () => {
         toast.error(<p>Error!!!</p>);
       });
 
-    form.reset();
+    actions.resetForm();
   };
 
   return (
