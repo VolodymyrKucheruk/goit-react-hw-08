@@ -2,7 +2,7 @@ import css from "./ContactsPage.module.css";
 import { FcContacts } from "react-icons/fc";
 import { ContactList } from "../../components/ContactList/ContactList";
 import { SearchBox } from "../../components/SearchBox/SearchBox";
-import { ContactForm } from "../../componentsContactForm/ContactForm";
+import { ContactForm } from "../../components/ContactForm/ContactForm";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchContacts } from "../../redux/operations.js";
