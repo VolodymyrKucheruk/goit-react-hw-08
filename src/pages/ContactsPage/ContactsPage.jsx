@@ -1,13 +1,13 @@
 import css from "./ContactsPage.module.css";
 import { FcContacts } from "react-icons/fc";
 import { ContactList } from "../../components/ContactList/ContactList";
-import { SearchBox } from "../SearchBox/SearchBox";
-import { ContactForm } from "../ContactForm/ContactForm";
+import { SearchBox } from "../../components/SearchBox/SearchBox";
+import { ContactForm } from "../../componentsContactForm/ContactForm";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { fetchContacts } from "../../redux/operations";
+import { fetchContacts } from "../../redux/operations.js";
 import { selectIsLoading, selectError } from "../../redux/selectors";
-import { Loader } from "../Loader/Loader";
+import { Loader } from "../../components/Loader/Loader.jsx";
 import DocumentTitle from "../../components/DocumentTitle";
 
 export const ContactsPage = () => {
