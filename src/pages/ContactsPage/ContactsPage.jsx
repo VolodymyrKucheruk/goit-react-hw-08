@@ -10,7 +10,7 @@ import { selectIsLoading, selectError } from "../../redux/selectors";
 import { Loader } from "../../components/Loader/Loader.jsx";
 import DocumentTitle from "../../components/DocumentTitle";
 
-export const ContactsPage = () => {
+const ContactsPage = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
@@ -26,7 +26,7 @@ export const ContactsPage = () => {
       </div>
 
       <h1 className={css.title}>
-        Phonebook
+        Phoneboock
         <FcContacts className={css.bookItem} />
       </h1>
       <ContactForm />
@@ -36,3 +36,4 @@ export const ContactsPage = () => {
     </>
   );
 };
+export default ContactsPage;
