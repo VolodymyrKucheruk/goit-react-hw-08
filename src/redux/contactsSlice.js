@@ -49,11 +49,11 @@ const contactsSlice = createSlice({
         state.isLoading = false;
         state.error = null;
 
-        const index = state.contacts.findIndex(
+        const index = state.items.findIndex(
           (contact) => contact.id === action.payload.id
         );
         if (index !== -1) {
-          state.contacts[index] = action.payload;
+          state.items[index] = action.payload;
         }
       })
       .addCase(editContact.rejected, handleRejected)

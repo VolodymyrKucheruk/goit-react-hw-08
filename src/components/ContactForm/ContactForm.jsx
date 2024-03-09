@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import { nanoid } from "nanoid";
 import { useDispatch } from "react-redux";
 import { addContacts } from "../../redux/operations";
+import toast from "react-hot-toast";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string()
@@ -38,8 +39,14 @@ export const ContactForm = () => {
       }}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
-        dispatch(addContacts({ id: nanoid(), ...values }));
-        actions.resetForm();
+        dispatch(addContacts({ id: nanoid(), ...values }))
+          .then(() => {
+            toast.success("Contact successfully added!");
+            actions.resetForm();
+          })
+          .catch(() => {
+            toast.error("Failed to add contact!");
+          });
       }}
     >
       {({ setFieldValue }) => (

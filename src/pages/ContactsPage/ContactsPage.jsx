@@ -9,6 +9,7 @@ import { fetchContacts } from "../../redux/operations.js";
 import { selectIsLoading, selectError } from "../../redux/selectors";
 import { Loader } from "../../components/Loader/Loader.jsx";
 import DocumentTitle from "../../components/DocumentTitle";
+import { motion } from "framer-motion";
 
 const ContactsPage = () => {
   const dispatch = useDispatch();
@@ -19,21 +20,27 @@ const ContactsPage = () => {
   }, [dispatch]);
 
   return (
-    <>
+    <motion.div
+      style={{ height: "100%"}}
+      initial={{ opacity: 0, y: -600 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.2}}
+    >
       <DocumentTitle>Your Contacts</DocumentTitle>
       <div className={css.deviceHeader}>
         <div className={css.deviceSensors}></div>
       </div>
-
-      <h1 className={css.title}>
-        Phoneboock
-        <FcContacts className={css.bookItem} />
-      </h1>
-      <ContactForm />
-      <SearchBox />
-      {isLoading && !error && <Loader />}
-      <ContactList />
-    </>
+      <div className={css.wrapper}>
+        <h1 className={css.title}>
+          Phoneboock
+          <FcContacts size={75} />
+        </h1>
+        <ContactForm />
+        <SearchBox />
+        {isLoading && !error && <Loader />}
+        <ContactList />
+      </div>
+    </motion.div>
   );
 };
 export default ContactsPage;

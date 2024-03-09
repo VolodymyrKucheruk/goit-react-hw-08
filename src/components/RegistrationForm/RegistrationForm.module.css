@@ -79,27 +79,24 @@
   font-size: 12px;
 }
 .btn {
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.3em;
   border: 0;
   outline: 0;
   color: #ae1100;
-  font-size: 1em;
-  transition: all 0.25s ease;
+  transition: all 0.25s ease-in-out;
   cursor: pointer;
-  font-weight: 600;
   border-radius: 320px;
-  padding: 12px 25px;
-  background-color: #eba147f7;
+  padding: 8px 25px;
+  background-color: #ffffff24;
+  backdrop-filter: blur(8px);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
 }
 .btn:hover {
-  color: #178a0c;
-  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
-}
-.btn:active {
-  box-shadow: rgba(59, 55, 55, 0.521) 1px 1px 4px 0px inset,
-    rgba(3, 3, 3, 0.313) -2px -2px 4px 0px inset;
+  color: #ffffff;
+  background-color: #eba147f7;
 }
 
 .error {

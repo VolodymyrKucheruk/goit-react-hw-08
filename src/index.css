@@ -9,13 +9,11 @@ a {
 }
 
 body {
-  font-family: "Monserat", sans-serif;
+  font-family: "Abril Fatface", cursive;
   line-height: 1.5;
   letter-spacing: -0.2px;
   margin: 0 auto;
   box-sizing: content-box;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(#3f87a6 10%, #ebf8e1a2 10%),
     linear-gradient(to right, #ebf8e100 10%, #c73030 10% 10.2%, #ebf8e100 10.5%);
   background-size: 100% 25px, 100% 100%;
@@ -42,15 +40,20 @@ img {
   display: block;
   max-width: 100%;
 }
+input {
+  font-family: "Abril Fatface", cursive;
+}
+
+
 #root {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 678px;
-  min-height: 95svh;
+  max-width: 578px;
+  height: 100svh;
   margin: 0 auto;
-  padding: 15px 35px;
+  padding: 10px 45px;
   background-color: #ebecf0;
   background-image: url("https://images.unsplash.com/photo-1500964757637-c85e8a162699");
   background-position: center center;

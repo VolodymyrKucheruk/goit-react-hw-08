@@ -1,0 +1,10 @@
+.deviceHeader {
+  position: absolute;
+  background: #1a1a1a;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  top: 5px;
+  left: 45%;
+  z-index: 199;
+}

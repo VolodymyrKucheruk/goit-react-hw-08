@@ -1,8 +1,6 @@
 .header{
     display: flex;
     justify-content:space-between;
-    position: sticky;
-    top: 0;
-    left: 0;
+    align-items: end;
     padding: 0 15px;
 }

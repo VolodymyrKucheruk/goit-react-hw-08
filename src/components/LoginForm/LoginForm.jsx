@@ -8,21 +8,21 @@ import toast from "react-hot-toast";
 import { FcAbout } from "react-icons/fc";
 
 const validationSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(3, "Name must be at least 3 characters long")
-    .required("This is a required field"),
+  email: Yup.string()
+    .email("Invalid email format")
+    .required("Email is required"),
   password: Yup.string()
     .min(6, "Password must be at least 6 characters long")
     .required("Password is required"),
 });
 
 export const LoginForm = () => {
-  const nameFieldId = nanoid();
+  const emailFieldId = nanoid();
   const passwordFieldId = nanoid();
   const dispatch = useDispatch();
 
   const handleSubmit = (value, actions) => {
-    dispatch(logIn({ value }))
+    dispatch(logIn(value))
       .unwrap()
       .then(() => {
         toast.success(<p>Success!!!</p>);
@@ -37,7 +37,7 @@ export const LoginForm = () => {
   return (
     <Formik
       initialValues={{
-        name: "",
+        email: "",
         password: "",
       }}
       validationSchema={validationSchema}
@@ -45,17 +45,17 @@ export const LoginForm = () => {
     >
       <Form className={css.form} autoComplete="off">
         <h1 className={css.title}>LogIn</h1>
-        <div className={css.formGroupName}>
-          <label className={css.label} htmlFor={nameFieldId}>
-            Name
+        <div className={css.formGroupEmail}>
+          <label className={css.label} htmlFor={emailFieldId}>
+            Email
           </label>
           <Field
             className={css.input}
-            type="text"
-            name="name"
-            id={nameFieldId}
+            type="email"
+            name="email"
+            id={emailFieldId}
           />
-          <ErrorMessage className={css.error} name="name" component="span" />
+          <ErrorMessage className={css.error} name="email" component="span" />
         </div>
 
         <div className={css.formGroupPassword}>
