@@ -7,4 +7,5 @@
   align-items: end;
   padding: 0 15px;
   width: 90%;
+  z-index: 1;
 }

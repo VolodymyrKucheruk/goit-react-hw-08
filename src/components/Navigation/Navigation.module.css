@@ -11,6 +11,7 @@
   background-color: #ffffff00;
   border: none;
   outline: none;
+  z-index: 10;
 }
 .icon:hover {
   scale: 1.25;
