@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { Layout } from "../Layout.jsx";
 import { PrivateRoute } from "../PrivateRoute.jsx";
-import { RestrictedRoute } from "../RestrictedRoute";
+import { RestrictedRoute } from "../RestrictedRoute.jsx";
 import { refreshUser } from "../../redux/auth/operations.js";
 import { useAuth } from "../hooks/useAuth.js";
 // import NotFoundPage from "../../pages/NotFoundPage/NotFoundPage.jsx";
