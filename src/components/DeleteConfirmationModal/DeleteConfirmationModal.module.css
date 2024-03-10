@@ -48,6 +48,9 @@
   color: #ffffff;
   transform: translateY(-5px) scale(1.1);
 }
+.confirmBtn:active {
+  transform: translateY(2px) scale(1.1);
+}
 
 .cancelBtn {
   font-family: "Abril Fatface", cursive;
@@ -55,7 +58,7 @@
   border: 0;
   outline: 0;
   color: #000000;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.15s ease-in-out;
   cursor: pointer;
   border-radius: 320px;
   padding: 8px 25px;
@@ -68,6 +71,9 @@
 .cancelBtn:hover {
   color: #ffffff;
   transform: translateY(-5px) scale(1.1);
+}
+.cancelBtn:active {
+  transform: translateY(2px) scale(1.1);
 }
 
 /**
