@@ -3,6 +3,7 @@ import css from "./ContactList.module.css";
 import { useSelector } from "react-redux";
 import { selectContacts } from "../../redux/selectors.js";
 import { selectFilter } from "../../redux/selectors.js";
+import { motion } from "framer-motion";
 
 export const ContactList = () => {
   const contacts = useSelector(selectContacts);
@@ -14,8 +15,16 @@ export const ContactList = () => {
 
   return (
     <ul className={css.wrapper}>
-      {filteredContacts.map((contact) => (
-        <Contact key={contact.id} value={contact} />
+      {filteredContacts.map((contact, index) => (
+        <motion.div
+          key={contact.id}
+          className={css.item}
+          initial={{ opacity: 0, width: 0 }}
+          animate={{ opacity: 1, width: "100%" }}
+          transition={{ delay: index * 0.25, ease: "easeOut" }}
+        >
+          <Contact value={contact} />
+        </motion.div>
       ))}
     </ul>
   );

@@ -32,7 +32,7 @@
   border: 0;
   outline: 0;
   border-radius: 320px;
-  padding: 16px;
+  padding: 12px 16px;
   margin-bottom: 5px;
   background-color: #ffffff01;
   backdrop-filter: blur(8px);
@@ -44,7 +44,7 @@
   -webkit-appearance: none;
 }
 .input:focus {
-  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+  box-shadow: inset 1px 1px 2px #676769, inset -1px -1px 2px #fff;
 }
 .error {
   margin-left: 5px;
@@ -71,3 +71,4 @@
   color: #ffffff;
   background-color: #eba147f7;
 }
+

@@ -32,7 +32,7 @@ const ContactsPage = () => {
       <div className={css.wrapper}>
         <h1 className={css.title}>
           Phoneboock
-          <FcContacts size={75} />
+          <FcContacts size={65} />
         </h1>
         <ContactForm />
         <SearchBox />
