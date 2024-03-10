@@ -28,7 +28,6 @@ const ContactsPage = () => {
     >
       <DocumentTitle>Your Contacts</DocumentTitle>
       <div className={css.deviceHeader}>
-        <div className={css.deviceSensors}></div>
       </div>
       <div className={css.wrapper}>
         <h1 className={css.title}>

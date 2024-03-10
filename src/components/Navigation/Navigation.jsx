@@ -9,11 +9,11 @@ export const Navigation = () => {
   return (
     <nav className={css.nav}>
       <NavLink className={css.link} to="/">
-        <FcHome className={css.icon} size={35} />
+        <FcHome className={css.icon} size={35} />Home
       </NavLink>
       {isLoggedIn && (
         <NavLink className={css.link} to="/contacts">
-          <FcContacts className={css.icon} size={37} />
+          <FcContacts className={css.icon} size={37} />Contacts
         </NavLink>
       )}
     </nav>
