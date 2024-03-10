@@ -90,7 +90,8 @@ export const Contact = ({ value }) => {
             {isEditing ? (
               <motion.input
                 className={css.input}
-                type="text"
+                type="tel"
+                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
                 value={editedNumber}
                 onChange={(e) => setEditedNumber(e.target.value)}
                 initial={{ opacity: 0, x: -10 }}

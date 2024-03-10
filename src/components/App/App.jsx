@@ -7,6 +7,7 @@ import { PrivateRoute } from "../PrivateRoute.jsx";
 import { RestrictedRoute } from "../RestrictedRoute";
 import { refreshUser } from "../../redux/auth/operations.js";
 import { useAuth } from "../hooks/useAuth.js";
+import NotFoundPage from "../../pages/NotFoundPage/NotFoundPage.jsx";
 
 const HomePage = lazy(() => import("../../pages/HomePage/HomePage.jsx"));
 const RegisterPage = lazy(() =>
@@ -16,9 +17,9 @@ const LoginPage = lazy(() => import("../../pages/LoginPage/LoginPage.jsx"));
 const ContactsPage = lazy(() =>
   import("../../pages/ContactsPage/ContactsPage.jsx")
 );
-const NotFound = lazy(() =>
-  import("../../pages/NotFoundPage/NotFoundPage.jsx")
-);
+// const NotFoundPage = lazy(() =>
+//   import("../../pages/NotFoundPage/NotFoundPage.jsx")
+// );
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -60,7 +61,7 @@ export const App = () => {
             }
           />
         </Route>
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Toaster />
     </>
