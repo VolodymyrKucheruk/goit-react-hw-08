@@ -8,3 +8,12 @@
   left: 45%;
   z-index: 199;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(18px);
+  width: 100%;
+  border-radius: 8px;
+}

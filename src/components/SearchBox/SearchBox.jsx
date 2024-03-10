@@ -13,7 +13,7 @@ export const SearchBox = () => {
   const onFilterChange = (e) => {
     dispatch(changeFilter(e.target.value));
   };
-  
+
   const filteredContactsCount = contacts.filter((contact) =>
     contact.name.toLowerCase().includes(filterValue.toLowerCase())
   ).length;

@@ -2,7 +2,6 @@ import css from "./NotFoundPage.module.css";
 import DocumentTitle from "../../components/DocumentTitle";
 import image from "../../assets/image.png";
 
-
 const NotFoundPage = () => {
   return (
     <>

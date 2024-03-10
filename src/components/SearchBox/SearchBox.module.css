@@ -1,5 +1,4 @@
-
-.wrapper{
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -8,7 +7,6 @@
 
 .container {
   width: 350px;
- 
 }
 
 .description {
@@ -24,7 +22,7 @@
   border: 0;
   outline: 0;
   border-radius: 320px;
-  padding: 12px;
+  padding: 8px 15px 8px;
   margin-bottom: 15px;
   background-color: #ffffff00;
   backdrop-filter: blur(8px);

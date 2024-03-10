@@ -1,6 +1,10 @@
-.header{
-    display: flex;
-    justify-content:space-between;
-    align-items: end;
-    padding: 0 15px;
+.header {
+  position: absolute;
+  top: 1.2%;
+  left: 1.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0 15px;
+  width: 90%;
 }

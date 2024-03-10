@@ -1,8 +1,7 @@
 .wrapper {
   display: inline-flex;
-  align-items:flex-end;
+  align-items: flex-end;
   gap: 22px;
-  
 }
 
 .link {
@@ -14,5 +13,4 @@
   background-clip: text;
   color: transparent;
   text-shadow: rgba(255, 255, 255, 0.587) 0px 3px 3px;
-  
 }

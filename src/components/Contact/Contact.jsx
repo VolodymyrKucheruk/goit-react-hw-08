@@ -91,7 +91,13 @@ export const Contact = ({ value }) => {
               <motion.input
                 className={css.input}
                 type="tel"
-                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                onKeyPress={(e) => {
+                  const isValidInput =
+                    /\d/.test(e.key) || e.key === "Backspace" || e.key === "-";
+                  if (!isValidInput) {
+                    e.preventDefault();
+                  }
+                }}
                 value={editedNumber}
                 onChange={(e) => setEditedNumber(e.target.value)}
                 initial={{ opacity: 0, x: -10 }}

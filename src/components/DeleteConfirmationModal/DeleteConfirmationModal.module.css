@@ -38,17 +38,16 @@
   cursor: pointer;
   border-radius: 320px;
   padding: 8px 25px;
-   background-color: #2ca51cf7;
+  background-color: #2ca51cf7;
   backdrop-filter: blur(10px);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
 }
 .confirmBtn:hover {
- color: #ffffff;
+  color: #ffffff;
   transform: translateY(-5px) scale(1.1);
 }
-
 
 .cancelBtn {
   font-family: "Abril Fatface", cursive;
@@ -68,7 +67,7 @@
 }
 .cancelBtn:hover {
   color: #ffffff;
-  transform: translateY(-5px) scale(1.1)
+  transform: translateY(-5px) scale(1.1);
 }
 
 /**

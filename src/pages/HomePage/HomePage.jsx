@@ -6,9 +6,7 @@ import { motion } from "framer-motion";
 const HomePage = () => {
   return (
     <>
-      <div className={css.deviceHeader}>
-        <div className={css.deviceSensors}></div>
-      </div>
+      <div className={css.deviceHeader}></div>
       <DocumentTitle>Home</DocumentTitle>
       <motion.div
         className={css.wrapper}

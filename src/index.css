@@ -44,23 +44,23 @@ input {
   font-family: "Abril Fatface", cursive;
 }
 
-
 #root {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 578px;
+  max-width: 550px;
   height: 100svh;
   margin: 0 auto;
-  padding: 10px 35px 40px;
+  padding: 30px 40px 45px;
   background-color: #ebecf0;
   background-image: url("https://images.unsplash.com/photo-1500964757637-c85e8a162699");
   background-position: center center;
   background-size: cover;
   box-shadow: rgba(2, 2, 2, 0.733) 0px 19px 38px,
     rgba(0, 0, 0, 0.523) 0px 15px 12px;
-  border-radius: 85px;
+  border-radius: 65px;
   border: 8px solid #1a1a1a;
   border-top: 15px solid #1a1a1a;
 }
