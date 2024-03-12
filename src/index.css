@@ -16,7 +16,7 @@ body {
   box-sizing: content-box;
   background: linear-gradient(#3f87a6 10%, #ebf8e1a2 10%),
     linear-gradient(to right, #ebf8e100 10%, #c73030 10% 10.2%, #ebf8e100 10.5%);
-  background-size: 100% 25px, 100% 105%;
+  background-size: 100% 25px, 100% 200%;
   background-repeat: repeat, no-repeat;
 }
 
