@@ -21,7 +21,7 @@ export const ContactList = () => {
           className={css.item}
           initial={{ opacity: 0, width: 0 }}
           animate={{ opacity: 1, width: "100%" }}
-          transition={{ delay: index * 0.25, ease: "easeOut" }}
+          transition={{ delay: index * 0.15, ease: "easeOut" }}
         >
           <Contact value={contact} />
         </motion.div>

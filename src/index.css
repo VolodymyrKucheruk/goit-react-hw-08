@@ -51,11 +51,10 @@ input {
   justify-content: center;
   align-items: center;
   max-width: 550px;
-  height: 90svh;
+  height: 100svh;
   margin: 0 auto;
   padding: 30px 40px 45px;
   background: rgb(95, 172, 96);
-  
   background-image: url("https://images.unsplash.com/photo-1500964757637-c85e8a162699");
   background-position: center center;
   background-size: cover;
