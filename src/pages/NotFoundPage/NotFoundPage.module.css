@@ -13,5 +13,11 @@
   margin-top: auto;
 }
 .text {
+  margin-bottom: 25px;
+}
+.link{
   margin-bottom: auto;
+  font-size: 1.7em;
+  color: blue;
+  font-style:unset;
 }
