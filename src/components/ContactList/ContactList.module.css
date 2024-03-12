@@ -20,3 +20,6 @@
   background-color: #ffffff39;
   border-radius: 50px;
 }
+.item{
+  min-width: 100%;
+}
